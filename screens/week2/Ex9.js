@@ -8,7 +8,7 @@ export default function Ex9() {
       style={{
         flex: 1,
         flexDirection: "column",
-        justifyContent: 'space-around'
+        justifyContent: "space-around",
       }}
     >
       <View

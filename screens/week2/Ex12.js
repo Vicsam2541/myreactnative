@@ -10,5 +10,6 @@ export default function Ex12() {
       <View style={{width: 150,  backgroundColor: '#4A90E2'}} />
         <View style={{width: 150,  backgroundColor: '#9013FE'}} />
     </View>
+    
   );
 }
