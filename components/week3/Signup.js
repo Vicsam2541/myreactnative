@@ -3,7 +3,7 @@ import React from "react";
 import {
   StyleSheet,
   Text,
-  TextInput,
+  
   View,
   TextInput,
   Button,
@@ -17,13 +17,13 @@ export default function Signup() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "stretch",
-        padding : 10
+        padding: 10,
       }}
     >
-      <TextInput placeholder="Input ID" />
+      <TextInput placeholder="Input ID " />
       <TextInput placeholder="Input Email" />
       <TextInput placeholder="Input Address" />
-      <Button title="Sign up" color="red" />
+      <Button title="Sign UP" color="red" />
     </View>
   );
 }
