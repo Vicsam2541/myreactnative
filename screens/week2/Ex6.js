@@ -1,34 +1,44 @@
+import { useNavigation } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 
-export default function Ex5() {
+export default function Ex6() {
+  const navigation = useNavigation();
+
   return (
-    <View style={{ flex: 1,
-     flexDirection: "column", 
-     justifyContent : "center",
-     alignItems : "center", }}>
+    <View style={{ flex: 1 }}>
       <View
         style={{
-          width: 100,
-          height: 100,
-          backgroundColor: "powderblue",
+          flex: 1,
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
         }}
-      />
-      <View
-        style={{
-          width: 100,
-          height: 100,
-          backgroundColor: "skyblue",
-        }}
-      />
-      <View
-        style={{
-          width: 100,
-          height: 100,
-          backgroundColor: "steelblue",
-        }}
-      />
+      >
+        <View
+          style={{
+            width: 100,
+            height: 100,
+            backgroundColor: "powderblue",
+          }}
+        />
+        <View
+          style={{
+            width: 100,
+            height: 100,
+            backgroundColor: "skyblue",
+          }}
+        />
+        <View
+          style={{
+            width: 100,
+            height: 100,
+            backgroundColor: "steelblue",
+          }}
+        />
+      </View>
+      <Button title="Next" onPress={() => navigation.navigate("Ex7")} />
     </View>
   );
 }

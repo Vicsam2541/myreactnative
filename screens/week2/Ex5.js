@@ -1,9 +1,12 @@
+import { useNavigation } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Button,StyleSheet, Text, View } from "react-native";
 
 export default function Ex5() {
+  const navigation = useNavigation();
   return (
+    <View style={{ flex: 1 }}>
     <View
       style={{
         flex: 1,
@@ -33,6 +36,8 @@ export default function Ex5() {
           backgroundColor: "steelblue",
         }}
       />
+    </View>
+    <Button title="Next" onPress={() => navigation.navigate("Ex6")} />
     </View>
   );
 }

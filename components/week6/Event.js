@@ -61,7 +61,7 @@ export default function Event(props) {
                   borderBottomLeftRadius: 10,
                   borderBottomRightRadius: 10,
                   borderColor: "gray",
-                  borderWidth:1
+                  borderWidth: 1,
                 }}
               >
                 <View style={{ alignItems: "center", padding: 10 }}>

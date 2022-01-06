@@ -1,9 +1,12 @@
+import { useNavigation } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Button,StyleSheet, Text, View } from "react-native";
 
 export default function Ex9() {
+  const navigation = useNavigation();
   return (
+    <View style={{ flex: 1 }}>
     <View
       style={{
         flex: 1,
@@ -41,6 +44,8 @@ export default function Ex9() {
         <View style={{ width: 50, height: 50, backgroundColor: "#9013FE" }} />
         <View style={{ width: 50, height: 50, backgroundColor: "#9013FE" }} />
       </View>
+    </View>
+    <Button title="Next" onPress={() => navigation.navigate("Ex10")} />
     </View>
   );
 }

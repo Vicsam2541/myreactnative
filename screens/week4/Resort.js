@@ -10,24 +10,18 @@ import Section6 from "../../components/week4/Section6";
 import Section7 from "../../components/week4/Section7";
 import Section8 from "../../components/week4/Section8";
 
-
-
 export default function Resort() {
   return (
     <ScrollView>
       <View style={{ flex: 1, paddingTop: 1 }}>
- 
-        <Section1/>
-        <Section2/>
-        <Section3/>
-        <Section4/>
-        <Section5/>
-        <Section6/>
-        <Section7/>
-        <Section8/>
-        
-        
-        
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        <Section5 />
+        <Section6 />
+        <Section7 />
+        <Section8 />
       </View>
     </ScrollView>
   );
